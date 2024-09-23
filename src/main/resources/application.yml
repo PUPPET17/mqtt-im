@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: mqtt-im
+
+  data:
+    redis:
+      database: 13
+      host: 172.72.16.190
+      port: 6379
+      password: Puppet17.
+      timeout: 3000
