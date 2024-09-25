@@ -12,3 +12,14 @@ spring:
       port: 6379
       password: Puppet17.
       timeout: 3000
+
+minio:
+  endpoint: http://117.72.16.190:9000
+  access-key: gak237I5taEdwW9Mzj8l
+  secret-key: 9XTQ9wYwy3MA4QPcZJC55ruqV2D6EkjOl0cZYr3q
+  bucket:
+    name: mqtt
+
+logging:
+  level:
+    root: INFO

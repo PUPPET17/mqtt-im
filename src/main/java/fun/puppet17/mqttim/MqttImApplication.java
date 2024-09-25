@@ -1,16 +1,9 @@
 package fun.puppet17.mqttim;
 
-import okhttp3.*;
-
-import org.eclipse.paho.client.mqttv3.MqttClient;
-import org.eclipse.paho.client.mqttv3.MqttException;
-import org.eclipse.paho.client.mqttv3.MqttSecurityException;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
-
-import java.io.IOException;
 
 /**
  * @author PUPPET17
@@ -19,7 +12,9 @@ import java.io.IOException;
 public class MqttImApplication {
     
     public static void main(String[] args) {
-        SpringApplication.run(MqttImApplication.class, args);
+        SpringApplication app = new SpringApplication(MqttImApplication.class);
+        app.setAdditionalProfiles("debug");
+        app.run(args);
         System.out.println("SpringBoot,启动!");
     }
 
